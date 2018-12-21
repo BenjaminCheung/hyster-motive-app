@@ -2,9 +2,9 @@
      User Global Variables
 *******************************/
 
-@headerFont        : 'Helvetica Neue',Helvetica,Arial,sans-serif;
-@headerFontWeight  : 400;
-@pageFont          : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFont        : 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+@headerFontWeight  : 700;
+@pageFont          : 'Arial', sans-serif;
 @fontSmoothing     : antialiased;
 @fontColor         : #e3e3e3;
 

@@ -3,16 +3,16 @@
     <div class="header">
       <div class="center-wrap">
         <div class="logo">
-          <img src="static/images/Hyster_PowerMatch.png" alt="hyster logo" height="70" />
+          <img src="static/images/Hyster_PowerMatch.png" alt="hyster logo" height="90" />
         </div>
         <div>
           <h2 class="app-title" >Selection Guide</h2>
         </div>
         <img
           class="header-graphic"
-          src="static/images/powertrio.png"
+          src="static/images/hyster_solution_icon.png"
           alt="power graphic"
-          height="80"
+          height="100"
         />
       </div>
       <div class="contact" >

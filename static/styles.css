@@ -18,7 +18,7 @@
 .header-graphic {
   display: inline-block;
   margin-left: 28px;
-  height: 40px;
+  height: 50px;
 }
 
 .center-wrap {
@@ -33,7 +33,7 @@
 
 .app-title {
   margin: 0;
-  color: #DCA93D;
+  color: rgb(255, 227, 75);
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -47,7 +47,7 @@ img {
 }
 
 .logo img {
-  height: 40px;
+  height: 58px;
   vertical-align: middle;
 }
 
@@ -92,6 +92,7 @@ img {
   font-size: 1.225rem;
   font-weight: bold;
 }
+
 
 .mobile-breadcrumb li::before {
   background-color: #4FAD5B;
@@ -479,11 +480,11 @@ input {
   }
 
   .logo img {
-    height: 50px;
+    height: 65px;
   }
 
   .header-graphic {
-    height: 65px;
+    height: 75px;
     vertical-align: middle;
   }
 
