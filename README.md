@@ -1,6 +1,6 @@
-# yale-motive-app
+# hyster-motive-app
 
-> Yale Motive App
+> Hyster Motive App
 
 ## Build Setup
 

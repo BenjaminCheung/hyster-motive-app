@@ -1,7 +1,7 @@
 {
-  "name": "yale-motive-app",
+  "name": "hyster-motive-app",
   "version": "1.0.0",
-  "description": "Yale Motive App",
+  "description": "Hyster Motive App",
   "author": "Benjamin Cheung <benjamin.cheung@gmail.com>",
   "private": true,
   "scripts": {

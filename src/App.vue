@@ -3,7 +3,7 @@
     <div class="header">
       <div class="center-wrap">
         <div class="logo">
-          <img src="static/images/yalelogo.png" alt="yale logo" height="70" />
+          <img src="static/images/Hyster_PowerMatch.png" alt="hyster logo" height="70" />
         </div>
         <div>
           <h2 class="app-title" >Selection Guide</h2>
