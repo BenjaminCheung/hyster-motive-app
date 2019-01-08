@@ -177,7 +177,7 @@ export default {
     },
     getResponseUrl() {
       // need to change this root for prod
-      const root = 'http://qa.hysteryalelifttrucks.com/customersolutions/nuveracalculator/motive/index.html#/results';
+      const root = 'http://qa.hysteryalelifttrucks.com/customersolutions/nuveracalculator/motivehyster/index.html#/results';
       const responseUrl = `${root}?shifts=${this.store.shifts}&trucks=${this.store.trucks}&batteryfail=${this.store.batteryFailure}&batteryhabits=${this.store.batteryHabits}&batteryspace=${this.store.batterySpace}&results=${this.store.result}`;
       return responseUrl;
     },
