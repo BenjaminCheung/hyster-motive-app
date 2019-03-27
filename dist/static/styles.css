@@ -121,7 +121,7 @@ img {
 }
 
 .mobile-breadcrumb li.active::before, .breadcrumb li.active::before {
-  border: 3px #E2B648 solid;
+  border: 3px rgb(255, 227, 75) solid;
   background-color: white;
   color: black;
 }
@@ -169,8 +169,8 @@ img {
 }
 
 .breadcrumb li.visited::before {
-  background-color:#E2B648;
-  border-color:#E2B648;
+  background-color:rgb(255, 227, 75);;
+  border-color:rgb(255, 227, 75);;
   content: '\2713 ';
   font-size: 1.5rem;
 }
@@ -201,7 +201,7 @@ img {
   align-self: center;
   font-size: 1.375rem;
   margin: 36px 0;
-  background-color: #DEB03C;
+  background-color: rgb(255, 227, 75);
   box-shadow:  0 2px 2px #666;
   color:white;
   padding: 0.8rem 4rem;
@@ -216,7 +216,7 @@ img {
 }
 
 .select .ui.button.active {
-  background:#E2B648;
+  background: rgb(255, 227, 75);
   color: white;
 }
 
@@ -228,7 +228,7 @@ img {
   padding: 0;
 }
 .ui.form .fields label.primary {
-  color:#DEB03C;
+  color: rgb(255, 227, 75);
 }
 
 .ui.form .inline.fields {
@@ -408,8 +408,8 @@ input {
 }
 
 .results .combo tr:hover {
-  background-color: #DCA93D;
-  color: white;
+  background-color: rgb(255, 227, 75);
+  color: black;
 }
 
 .results .combo tr:first-child:hover {

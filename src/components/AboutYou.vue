@@ -172,13 +172,12 @@ export default {
           elem.click();
           return;
         }
+        // eslint-disable-next-line no-alert
         alert('An input field is incorrect please fix');
       });
     },
     getResponseUrl() {
-      // need to change this root for prod
-      const root = 'http://qa.hysteryalelifttrucks.com/customersolutions/nuveracalculator/motivehyster/index.html#/results';
-      const responseUrl = `${root}?shifts=${this.store.shifts}&trucks=${this.store.trucks}&batteryfail=${this.store.batteryFailure}&batteryhabits=${this.store.batteryHabits}&batteryspace=${this.store.batterySpace}&results=${this.store.result}`;
+      const responseUrl = `${location.protocol}//${location.host}${location.pathname}#/results?shifts=${this.store.shifts}&trucks=${this.store.trucks}&batteryfail=${this.store.batteryFailure}&batteryhabits=${this.store.batteryHabits}&batteryspace=${this.store.batterySpace}&results=${this.store.result}`;
       return responseUrl;
     },
   },
