@@ -34,6 +34,7 @@
           name="Trucks"
           v-model="store.trucks"
           type="number" placeholder="0"
+          min="1"
         />
       </div>
     </div>

@@ -34,8 +34,8 @@
         <tr>
           <td v-if="this.$route.query.results === 'combo'">
             <h3>Refuel / Recharge Time</h3>
-            Refuel is accomplished in 3 minutes or less and
-            will power 6-12 hours of continuous runtime.
+            Refuel is accomplished as quickly as 3 minutes and will power
+            6-12 hours of continuous runtime.
           </td>
           <td v-if="this.$route.query.results === 'combo' ||
             this.$route.query.results === 'lithium'">
