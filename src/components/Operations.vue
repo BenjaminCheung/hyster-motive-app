@@ -33,14 +33,21 @@
         <input
           name="Trucks"
           v-model="store.trucks"
+          v-validate="'min_value:1'"
           type="number" placeholder="0"
           min="1"
+          :class="{'input': true, 'is-danger': errors.has('Trucks') }"
         />
+        <i v-show="errors.has('Trucks')" class="fa fa-warning"></i>
+        <span v-show="errors.has('Trucks')" class="help is-danger">
+          {{ errors.first('Trucks') }}
+        </span>
       </div>
     </div>
     <router-link
       class="ui button nuvera-btn bevel center start"
-      to="/pain"
+      to=""
+      @click.native="validateBeforeSubmit"
       >
       Next
     </router-link>
@@ -53,6 +60,18 @@ export default {
   name: 'Operations',
   props: {
     store: Object,
+  },
+  methods: {
+    validateBeforeSubmit() {
+      this.$validator.validateAll().then((result) => {
+        if (result) {
+          location.href = '#/pain';
+          return;
+        }
+        // eslint-disable-next-line no-alert
+        alert('An input field is incorrect please fix');
+      });
+    },
   },
 };
 </script>
