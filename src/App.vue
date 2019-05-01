@@ -31,10 +31,6 @@
                         active: this.$route.name === 'Pain',
                         visited: this.store.currentPage > 2
                       }">Pain Exposure</li>
-          <li :class="{
-                        active: this.$route.name === 'AboutYou',
-                        visited: this.store.currentPage > 3
-                      }">About You</li>
           <li :class="{ active: this.$route.name === 'Results' }">My Solution</li>
         </ul>
       </div>
@@ -51,12 +47,6 @@
       <li :class="{
                     active: this.$route.name === 'Pain',
                     visited: this.store.currentPage > 2
-                  }">
-                    <span class="spacer-line"></span>
-                  </li>
-      <li :class="{
-                    active: this.$route.name === 'AboutYou',
-                    visited: this.store.currentPage > 3
                   }">
                     <span class="spacer-line"></span>
                   </li>

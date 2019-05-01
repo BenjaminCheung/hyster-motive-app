@@ -44,12 +44,16 @@
         </span>
       </div>
     </div>
-    <router-link
+    <button
       class="ui button nuvera-btn bevel center start"
-      to=""
-      @click.native="validateBeforeSubmit"
+      v-on:click="validateBeforeSubmit"
       >
       Next
+    </button>
+    <router-link
+      class="topain"
+      to="/pain"
+      >
     </router-link>
   </div>
 
@@ -65,7 +69,7 @@ export default {
     validateBeforeSubmit() {
       this.$validator.validateAll().then((result) => {
         if (result) {
-          location.href = '#/pain';
+          document.querySelector('.topain').click();
           return;
         }
         // eslint-disable-next-line no-alert

@@ -2,8 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import VeeValidate from 'vee-validate';
+import 'es6-promise/auto';
 import App from './App';
 import router from './router';
+
 
 Vue.config.productionTip = false;
 Vue.use(VeeValidate);

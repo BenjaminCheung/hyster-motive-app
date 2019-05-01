@@ -40,7 +40,7 @@
     </div>
     <router-link
       class="ui button nuvera-btn bevel center start"
-      to="/aboutyou"
+      :to="{ path: getResponseUrl() }"
       >
       Next
     </router-link>
@@ -54,6 +54,47 @@ export default {
     store: Object,
   },
   methods: {
+    getBatteryResult(shifts, pain, trucks) {
+      switch (shifts) {
+        case 1:
+          if (pain > 0) {
+            return 'lithium';
+          }
+          return 'lead';
+        case 2:
+          if (pain > 0) {
+            return 'lithium';
+          }
+          return 'lead';
+        case 3:
+          if (trucks < 10) {
+            return 'lithium';
+          }
+          return 'combo';
+        default:
+          return 'lead';
+      }
+    },
+    getPainFactor(failures, habits, spaces) {
+      const failure = failures ? 1 : 0;
+      const habit = habits ? 1 : 0;
+      const space = spaces ? 1 : 0;
+
+      return failure + habit + space;
+    },
+    getResponseUrl() {
+      const responseUrl = `/results?shifts=${this.store.shifts}&trucks=${this.store.trucks}&batteryfail=${this.store.batteryFailure}&batteryhabits=${this.store.batteryHabits}&batteryspace=${this.store.batterySpace}&results=${this.store.result}`;
+      return responseUrl;
+    },
+  },
+  created() {
+    const painFactor = this.getPainFactor(
+      this.store.batteryFailure,
+      this.store.batteryHabits,
+      this.store.batterySpace,
+    );
+    const result = this.getBatteryResult(this.store.shifts, painFactor, this.store.trucks);
+    this.store.result = result;
   },
 };
 </script>
